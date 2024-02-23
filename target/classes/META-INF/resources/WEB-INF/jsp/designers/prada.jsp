@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>frow.</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+            :root {
+                --backgroundColorLight: #f1efe7;
+                --textLight: #fefef2;
+                --textDark: #1a1a1a;
+                --gray: #dddddd;
+                --footer: #565656;
+                --fontSans: Montserrat;
+                --fontSansSerif: Lora;
+            }
+            body {
+                font-family: var(--fontSans);
+                margin: 0;
+                padding: 0;
+                text-transform: uppercase;
+                color: var(--textDark) !important;
+                background-color: var(--backgroundColorLight);
+                text-align: center;
+            }
+
+            .logo h1 a {
+                color: var(--textDark) !important;
+            }
+
+            nav ul li a:hover {
+                color: var(--textDark) !important;
+                border-bottom: 2px solid var(--textDark) !important;
+            }
+
+            .small, .medium, .large {
+                letter-spacing: 2px;
+                line-height: normal;
+                text-align: center;
+            }
+            .small {
+                font-size: 14px;
+            }
+            .medium {
+                font-size: 18px;
+            }
+            .large {
+                font-size: 50px;
+            }
+
+            .collection {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+            }
+
+            .img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                max-height: 300px;
+            }
+            .index {
+                max-height: 240px;
+            }
+            .background {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                grid-area: 1 / 1 / 2 / 3;
+                border-radius: 10px;
+                padding: 20px;
+                overflow: hidden;
+            }
+            .left {
+                grid-area: 1 / 1 / 2 / 2;
+                line-height: 10px;
+            }
+            .right { 
+                grid-area: 1 / 2 / 2 / 3;
+                display: grid;
+            }
+            button {
+                background-color: var(--textDark);
+                color: var(--backgroundColorLight);
+                border: none;
+                margin: 35px 20px;
+                font-size: 16px;
+                /* Button Transition */
+                transition-duration: 0.4s;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+            button:hover {
+                background-color: var(--backgroundColorLight);
+                color: var(--textDark);
+            }
+            button > a {
+                background-color: var(--textDark);
+                color: var(--backgroundColorLight);
+                border: none;
+                margin: 35px 20px;
+                font-size: 16px;
+                text-decoration: none;
+            }
+            button > a:hover, .disabled {
+                background-color: var(--textDark) !important;
+                color: var(--backgroundColorLight) !important;
+            }
+            p {
+                text-transform: none;
+                margin: 0 10% 0 10%;
+                text-align: justify;
+            }
+            @media screen and (max-width: 900px) {
+                #navbar {
+                    display: block;
+                }
+                .split {
+                    line-height: 7em;
+                }
+                .wrong { 
+                    grid-area: 1 / 2 / 2 / 3;
+                    display: grid;
+                    float: right;
+                    flex-direction: row-reverse;
+                }
+                .collection {
+                    grid-template-columns: 1fr;
+                }
+                .img {
+                    width: 30%;
+                }
+            }
+
+            body * {
+                box-sizing: border-box;
+            }
+
+            .video {
+                object-fit: cover;
+                height: 100vh; 
+                width: 100%; 
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+
+            nav {
+                margin-top: -20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+            }
+
+            .logo {
+                text-transform: lowercase;
+                font-family: var(--fontSans);
+                font-style: italic;
+                font-weight: 800;
+                font-size: larger;
+            }
+            .closer {
+                letter-spacing: -0.08cm;
+            }
+            .farther {
+                letter-spacing: -0.05cm;
+            }
+
+            .logo h1 a {
+                margin: 0;
+                color: var(--textLight);
+                text-decoration: none;
+            }
+
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            nav ul li {
+                display: inline-block;
+                margin-right: 20px;
+            }
+            nav ul li:last-child {
+                margin-right: 0;
+            }
+            nav ul li a {
+                display: inline-block;
+                color: var(--text);
+                text-decoration: none;
+                padding: 5px 0;
+                border-bottom: 6px solid transparent;
+                transition: all 0.5s ease;
+            }
+            nav ul li a:hover {
+                color: var(--textLight);
+                border-bottom: 2px solid var(--textLight);
+            }
+
+            @media screen and (max-width: 768px) {
+                nav {
+                    display: flex !important;
+                    flex-direction: column !important; 
+                    align-items: center !important; 
+                }
+                
+                .logo {
+                    margin-top: 20px !important; 
+                }
+            }
+            @media screen and (max-width: 640px) {
+                nav > ul {
+                    margin-left: 15%;
+                }
+            }
+
+            #dates {
+                padding-top: 20%;
+                text-align: center;
+                color: var(--textLight);
+                font-size: 24px;
+            }
+            #dates p {
+                font-family: var(--fontSansSerif);
+                font-size: 16px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            footer {
+                background-color: var(--footer);
+                color: var(--textLight);
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            .disabled {
+                cursor: not-allowed;
+            }
+            .chatbot-image {
+                position: fixed;
+                max-height: 90px;
+                bottom: 20px; 
+                right: 20px; 
+                z-index: 999; 
+            }
+            @media screen and (max-width: 850px) {
+                .chatbot-image {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <h1><a href="../"><span class="closer">F</span><span class="farther">row.</span></a></h1>
+        </div>
+        <ul>
+            <li><a href="about">About</a></li>
+            <li><a href="schedule">Schedule</a></li>
+            <li><a href="designers">Designers</a></li>
+            <li><a href="gallery">Gallery</a></li>
+            <li><a href="watch-live">Watch live</a></li>
+            <li><a href="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1 class="large">Prada Line</h1>
+
+        <div class="collection">
+            <div class="card">
+                <img class="img" src="https://imgix.bustle.com/uploads/image/2023/2/23/847b830a-5130-449d-a9cb-5dd20af5dfad-gettyimages-1247408058.jpg?w=900&h=1350&fit=crop&crop=focalpoint&auto=format%2Ccompress&q=50&dpr=2&fp-x=0.536&fp-y=0.2258" alt="Clothing Item 1">
+                <div class="background">
+                    <div class="left">
+                        <h3 class="medium">GRAY COTTON PRINT SKIRT</h3>
+                        <strong class="small">$2850</strong>
+                        <p></p>
+                    </div>
+                    <button onClick="buy()">Add to Cart</button>
+                </div>
+            </div> 
+            <div class="card">
+                <img class="img" src="https://assets.vogue.com/photos/650c682ec15bd8b4bad7bf7d/master/w_1600,c_limit/00001-prada-spring-2024-ready-to-wear-credit-gorunway.jpg" alt="Clothing Item 2">
+                <div class="background">
+                    <div class="left">
+                        <h3 class="medium">WOOL GRAY JACKET</h3>
+                        <strong class="small">$2115</strong>
+                        <p></p>
+                    </div>
+                    <button onClick="buy()">Add to Cart</button>
+                </div>
+            </div> 
+            <div class="card">
+                <img class="img" src="https://images.augustman.com/wp-content/uploads/sites/2/2022/07/29161525/PradaUomoFW22_Look49_Jeff-Goldblum-333x500.jpg" alt="Clothing Item 3">
+                <div class="background">
+                    <div class="left">
+                        <h3 class="medium">BLACK TRENCH COAT</h3>
+                        <strong class="small">$3450</strong>
+                        <p></p>
+                    </div>
+                    <button onClick="buy()">Add to Cart</button>
+                </div>
+            </div> 
+            <div class="card">
+                <img class="img" src="https://media1.popsugar-assets.com/files/thumbor/WzOto1_Nu_ZaKqbhfOTyI5uw4W8/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2022/09/23/699/n/1922564/8c78357bc328d83f_GettyImages-1426223393/i/Prada-SpringSummer-2023-Fashion-Show.jpg" alt="Clothing Item 4">
+                <div class="background">
+                    <div class="left">
+                        <h3 class="medium">STRAPLESS GRAY DRESS</h3>
+                        <strong class="small">$3162</strong>
+                        <p></p>
+                    </div>
+                    <button onClick="buy()">Add to Cart</button>
+                </div>
+            </div> 
+            <div class="card">
+                <img class="img" src="https://imgix.bustle.com/uploads/image/2023/9/21/7736434c-a06a-403f-bef7-786d1c089f84-gettyimages-1693789558.jpg?w=900&h=1350&fit=crop&crop=focalpoint&auto=format%2Ccompress&q=50&dpr=2&fp-x=0.4937&fp-y=0.1473" alt="Clothing Item 4">
+                <div class="background">
+                    <div class="left">
+                        <h3 class="medium">NAVY BLUE SHEER SKIRT</h3>
+                        <strong class="small">$1425</strong>
+                        <p></p>
+                    </div>
+                    <button onClick="buy()">Add to Cart</button>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <img src="https://zdisanto.github.io/test/media/Nova2.png" alt="Chatbot" class="chatbot-image">
+
+</body>
+</html>
