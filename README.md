@@ -36,11 +36,13 @@ vendors.
 - Implement features to display upcoming and ongoing events.
 - Generate a Finance Projection chart to demonstrate Frow's growth by 30% within 2 years.
 - Enable vendors to access specific designers and seasonal lines, with the option to purchase entire lines within the app.
-- Provide users with the capability to publish designer fashion lines, browse, and make purchases. Optionally, include a feature to view Fashion Shows live.
+- Provide users with the capability to publish designer fashion lines, browse, and make purchases.
+   - Optionally, include a feature to view Fashion Shows live.
 - Compile technical and functional materials to effectively address Board of Directors' concerns and support recommendations.
   
 ## The Goal
 The company with the best solution will be selected and contracted to provide FROW’s new digital fashion show application.
+
 <i>HINT: There were only two teams and we tied. They won best Business Strategy and we won best Technical Implementation.</i>
 
 ## Tools We Used:
