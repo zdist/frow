@@ -32,6 +32,12 @@ You can simply visit Frow's website [here](https://zdisanto.github.io/frow/index
 ## The Case
 FROW, a fashion company founded in 2017, has more than 100 designers and 200 
 vendors. 
+- A lean canvas business model
+- A product launch plan including a technical architecture
+- Working MVP
+- Product branding including logo
+  
+More Tasks:  
 - Develop an e-commerce application accessible to vendors and designers across various devices.
 - Implement features to display upcoming and ongoing events.
 - Generate a Finance Projection chart to demonstrate Frow's growth by 30% within 2 years.
