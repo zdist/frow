@@ -1,4 +1,4 @@
-# frow
+# frow.
 An implementation of an e-commerce application for the fashion brand, Frow.
 
 ## Table of Contents
