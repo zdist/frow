@@ -5,6 +5,7 @@ An implementation of an e-commerce application for the fashion brand, Frow.
 1. [Meet the Team](#meet-the-team)
 2. [Installation](#installation)
 3. [Tools Used](#tools-we-used)
+4. [Extra Info](#extra-info)
 
 ## Meet the Team
 - Aditi Wikhe
@@ -22,13 +23,26 @@ You can simply visit Frow's website [here](https://zdisanto.github.io/frow/index
     ```https://github.com/zdisanto/frow.git```
 
 4. Navigate to the directory where you cloned/downloaded the repository.
-5. Open ````src/main/com/frow````
-6. Run ````Frow.java````
+5. Open ```src/main/com/frow```
+6. Run ```Frow.java```
 
 ## Tools We Used:
-- Spring Boot 
-- Lombok
-- Docker
-- JPA 
+<i>and tried to use</i>
 - Java
-- HTML, JS, CSS, JSTL, Spring Tags
+- Spring Boot
+- HTML, JS, CSS,
+  - JPA, JSTL, Spring Tags, Lombok
+- Docker
+- MongoDB
+- AWS
+  
+## Extra Info
+This was a three and a half day event where a whole website, front-end, back-end and database was needed to be created. If you want the Cart to work, go to ```designers>yeezy``` and select:
+- Two VULTURES MASK
+- One VULTURES LONG BLACK T
+- One VULTURES PANT BLACK
+- One YZY PODS
+  
+Scroll to the top and the cart will now have 5 items in it. Click it and you will see all five items. Needless to say, this was hardcoded.
+
+### Thank you for checking this Repo out 👋
