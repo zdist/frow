@@ -8,9 +8,10 @@ An implementation of an e-commerce application for the fashion brand, Frow.
 4. [Extra Info](#extra-info)
 
 ## Meet the Team
-- Aditi Wikhe
-- Nabil Adem
-- Zo DiSanto
+<i>We were Team NAZ:</i>
+- <b>N</b>abil Adem
+- <b>A</b>diti Wikhe
+- <b>Z</b>o DiSanto
 
 ### What did we do? 
 We created Frow's webpresence in a company organized Hackathon.
