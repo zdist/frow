@@ -4,8 +4,10 @@ An implementation of an e-commerce application for the fashion brand, Frow.
 ## Table of Contents
 1. [Meet the Team](#meet-the-team)
 2. [Installation](#installation)
-3. [Tools Used](#tools-we-used)
-4. [Extra Info](#extra-info)
+3. [The Case](#the-case)
+4. [The Goal](#the-goal)
+5. [Tools Used](#tools-we-used)
+6. [Extra Info](#extra-info)
 
 ## Meet the Team
 <i>We were Team NAZ:</i>
@@ -26,6 +28,20 @@ You can simply visit Frow's website [here](https://zdisanto.github.io/frow/index
 4. Navigate to the directory where you cloned/downloaded the repository.
 5. Open ```src/main/com/frow```
 6. Run ```Frow.java```
+
+## The Case
+FROW, a fashion company founded in 2017, has more than 100 designers and 200 
+vendors. 
+- Develop an e-commerce application accessible to vendors and designers across various devices.
+- Implement features to display upcoming and ongoing events.
+- Generate a Finance Projection chart to demonstrate Frow's growth by 30% within 2 years.
+- Enable vendors to access specific designers and seasonal lines, with the option to purchase entire lines within the app.
+- Provide users with the capability to publish designer fashion lines, browse, and make purchases. Optionally, include a feature to view Fashion Shows live.
+- Compile technical and functional materials to effectively address Board of Directors' concerns and support recommendations.
+  
+## The Goal
+The company with the best solution will be selected and contracted to provide FROW’s new digital fashion show application.
+<i>HINT: There were only two teams and we tied. They won best Business Strategy and we won best Technical Implementation.</i>
 
 ## Tools We Used:
 <i>and tried to use</i>
