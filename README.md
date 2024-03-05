@@ -37,7 +37,7 @@ vendors.
 - Working MVP
 - Product branding including logo
   
-More Tasks:  
+<i>More Tasks:</i>  
 - Develop an e-commerce application accessible to vendors and designers across various devices.
 - Implement features to display upcoming and ongoing events.
 - Generate a Finance Projection chart to demonstrate Frow's growth by 30% within 2 years.
@@ -70,6 +70,6 @@ This was a three and a half day event where a whole website, front-end, back-end
   
 Scroll to the top and the cart will now have 5 items in it. Click it and you will see all five items. Needless to say, this was hardcoded.
 
-### Any Questions Comments or Concerns, please reachout to me and I'll be happy to help.
+### Any Questions, Comments or Concerns, please reachout to me and I'll be happy to help.
 
 # Thank you for checking this Repo out 👋
