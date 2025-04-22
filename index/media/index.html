@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test.</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+		:root {
+			--backgroundColorLight: #f1efe7;
+			--textLight: #fefef2;
+			--textDark: #1a1a1a;
+			--gray: #dddddd;
+			--footer: #565656;
+			--fontSans: Montserrat;
+			--fontSansSerif: Lora;
+		}
+
+		body * {
+			box-sizing: border-box;
+		}
+
+		.video {
+			object-fit: cover;
+			height: 100vh; 
+			width: 100%; 
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: -1;
+		}
+		
+		.collection {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-column-gap: 10px;
+			grid-row-gap: 10px;
+		}
+
+		.img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+			max-height: 300px;
+		}
+		.index {
+			max-height: 240px;
+		}
+		.background {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr;
+			grid-area: 1 / 1 / 2 / 3;
+			border-radius: 10px;
+			padding: 20px;
+			overflow: hidden;
+		}
+		.left {
+			grid-area: 1 / 1 / 2 / 2;
+			line-height: 10px;
+		}
+		.right { 
+			grid-area: 1 / 2 / 2 / 3;
+			display: grid;
+		}
+		button {
+			background-color: var(--textDark);
+			color: var(--backgroundColorLight);
+			border: none;
+			margin: 35px 20px;
+			font-size: 16px;
+			/* Button Transition */
+			transition-duration: 0.4s;
+			cursor: pointer;
+			border-radius: 10px;
+		}
+		button:hover {
+			background-color: var(--backgroundColorLight);
+			color: var(--textDark);
+		}
+		button > a {
+			background-color: var(--textDark);
+			color: var(--backgroundColorLight);
+			border: none;
+			margin: 35px 20px;
+			font-size: 16px;
+			text-decoration: none;
+		}
+		button > a:hover, .disabled {
+			background-color: var(--textDark) !important;
+			color: var(--backgroundColorLight) !important;
+		}
+		p {
+			text-transform: none;
+			margin: 0 10% 0 10%;
+			text-align: justify;
+		}
+	</style>
+</head>
+<body>
+    <video autoplay muted loop class="video">
+        <source src="pexels-cottonbro-9511254.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+	<div class="collection">
+		<div class="card">
+			<img class="img" src="prada1.png" alt="Clothing Item 1">
+			<div class="background">
+				<div class="left">
+					<h3 class="medium">GRAY COTTON PRINT SKIRT</h3>
+					<strong class="small">$250</strong>
+					<p></p>
+				</div>
+				<button onClick="buy()">Add to Cart</button>
+			</div>
+		</div> 
+		<div class="card">
+			<img class="img" src="prada2.png" alt="Clothing Item 2">
+			<div class="background">
+				<div class="left">
+					<h3 class="medium">GRAY <br>JACKET</h3>
+					<strong class="small">$215</strong>
+					<p></p>
+				</div>
+				<button onClick="buy()">Add to Cart</button>
+			</div>
+		</div> 
+		<div class="card">
+			<img class="img" src="prada3.jpg" alt="Clothing Item 3">
+			<div class="background">
+				<div class="left">
+					<h3 class="medium">NAVY BLUE SHEER SKIRT</h3>
+					<strong class="small">$150</strong>
+					<p></p>
+				</div>
+				<button onClick="buy()">Add to Cart</button>
+			</div>
+		</div> 
+		<div class="card">
+			<img class="img" src="prada4.png" alt="Clothing Item 4">
+			<div class="background">
+				<div class="left">
+					<h3 class="medium">TRI-COLORED SILK DRESS</h3>
+					<strong class="small">$362</strong>
+					<p></p>
+				</div>
+				<button onClick="buy()">Add to Cart</button>
+			</div>
+		</div> 
+		<div class="card">
+			<img class="img" src="prada5.jpg" alt="Clothing Item 4">
+			<div class="background">
+				<div class="left">
+					<h3 class="medium">GRAY SILK DRESS</h3>
+					<strong class="small">$345</strong>
+					<p></p>
+				</div>
+				<button onClick="buy()">Add to Cart</button>
+			</div>
+		</div> 
+	</div>
+	<div class="collection">
+		<!-- First Column -->
+		<div class="card">
+			<img class="img" src="vulturesHead.jpg" alt="Clothing Item 1">
+			<div class="background">
+				<div class="left">
+					<h3 class="medium">VULTURES MASK</h3>
+					<strong class="small">$200</strong>
+					<p></p>
+				</div>
+				<button onClick="buy()">Add to Cart</button>
+			</div>
+		</div> 
+		<div class="card">
+			<img class="img" src="vulturesShirt.png" alt="Clothing Item 2">
+			<div class="background">
+				<div class="left">
+					<h3 class="medium">VULTURES LONG BLACK T</h3>
+					<strong class="small">$200</strong>
+					<p></p>
+				</div>
+				<button onClick="buy()">Add to Cart</button>
+			</div>
+		</div> 
+		<div class="card">
+			<img class="img" src="vulturesPants.png" alt="Clothing Item 3">
+			<div class="background">
+				<div class="left">
+					<h3 class="medium">VULTURES PANT BLACK</h3>
+					<strong class="small">$200</strong>
+					<p></p>
+				</div>
+				<button onClick="buy()">Add to Cart</button>
+			</div>
+		</div> 
+		<div class="card">
+			<img class="img" src="vulturesShoes.png" alt="Clothing Item 4">
+			<div class="background">
+				<div class="left">
+					<h3 class="medium">YZY <br>PODS</h3>
+					<strong class="small">$200</strong>
+					<p></p>
+				</div>
+				<button onClick="buy()">Add to Cart</button>
+			</div>
+		</div> 
+		<div class="card">
+			<img class="img" src="Nova.png" alt="Nova">
+			<div class="background">
+				<div class="left">
+					<h3 class="medium">Nova <br></h3>
+					<strong class="small">$199/mo</strong>
+					<p></p>
+				</div>
+				<button onClick="buy()">Add to Cart</button>
+			</div>
+		</div> 
+		<div class="card">
+			<img class="img" src="Nova2.png" alt="Nova">
+		</div>
+	</div>
+
+</body>
+</html>
