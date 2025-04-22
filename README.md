@@ -19,7 +19,7 @@ An implementation of an e-commerce application for the fashion brand, Frow.
 We created Frow's webpresence in a company organized Hackathon.
 
 ## Installation
-You can simply visit Frow's website [here](zdist.github.io/frow/index/index) or you can go through the following steps to install Frow on your local machine:
+You can simply visit Frow's website [here](https://zdist.github.io/frow/index/index.html) or you can go through the following steps to install Frow on your local machine:
 1. Ensure you have Java installed on your system.
 2. Clone or download this repository:
    
